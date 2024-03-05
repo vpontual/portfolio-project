@@ -1,0 +1,21 @@
+section {
+  display: flex;
+}
+
+section h2 {
+  min-width: 25%;
+}
+
+.work-items {
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 75%;
+}
+
+.work-item {
+  flex: 1 0 275px;
+}
+
+.work-item:first-child {
+  min-width: 100%;
+}

@@ -1,0 +1,202 @@
+/* Global styles */
+* {
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #32343c;
+  color: grey;
+  height: 50px;
+  font-size: 36px;
+  align-items: center;
+}
+
+header h1 {
+  background: #9ecacc;
+  color: #32343c;
+  width: 350px;
+  text-align: end;
+}
+
+/* Navigation */
+.navigation {
+  margin: 0; /* Removes default margin */
+  padding: 0; /* Removes default padding */
+  display: flex; /* Displays list items horizontally */
+  font-size: 18px;
+}
+
+.navigation li {
+  margin-right: 20px; /* Adds space between list items */
+  border-bottom: #9ecacc;
+}
+
+.navigation li a {
+  text-decoration: none;
+  color: #9ecacc;
+}
+
+li {
+  list-style: none;
+}
+
+/* Banner */
+.banner {
+  width: 100%;
+  height: 100px;
+  margin: 0 auto;
+}
+
+.banner img {
+  /* Optional: Adjust image display properties */
+  width: 100%; /* Stretch image to fit the banner */
+  height: 100px; /* Maintain image aspect ratio */
+}
+
+/* Layout */
+.wrapper {
+  display: flex;
+  padding-bottom: 50px;
+}
+
+.sidenav {
+  width: 200px; /* Set width of the side nav */
+  padding: 10px; /* Optional: Add padding */
+  border-right: 1px solid #ddd; /* Optional: Add border */
+  text-align: end;
+}
+
+.sidenav li {
+  padding: 5px 10px; /* Add padding to list items */
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  /* width: 500px; Optional: Set container width */
+  width: 100%;
+  margin: 0 auto; /* Optional: Center the container horizontally */
+  border: 1px 0px 1px 20px solid #ddd; /* Optional: Add a border for visualization */
+}
+
+/* Main content */
+.aboutcontent {
+  display: flex;
+  padding: 10px;
+  margin: 10px;
+  text-align: justify;
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.card {
+  display: flex;
+  padding: 0px;
+  border: 5px solid #9ecacc;
+  margin: 5px;
+  /* text-align: center; */
+  height: 200px;
+  align-items: flex-end;
+}
+
+.major {
+  width: 94%;
+  justify-content: space-between;
+  margin-left: 5%;
+  margin-right: 5%;
+  display: flex;
+  /* flex-wrap: wrap; */
+  position: relative;
+}
+
+.major img {
+  width: 100%;
+  height: 190px;
+}
+
+.minor1 {
+  width: 42%;
+  justify-content: space-between;
+  margin-left: 5%;
+  margin-top: 5%;
+}
+
+.minor2 {
+  width: 42%;
+  justify-content: space-between;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 5%;
+}
+
+.minor1 img,
+.minor2 img {
+  width: 100%;
+  height: 190px;
+}
+
+.overlaytext1 {
+  position: absolute;
+  top: 160px;
+  left: 75px;
+  transform: translate(-50%, -50%);
+  background-color: #9ecacc;
+  color: #32343c;
+  padding: 10px 20px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.overlaytext2 {
+  position: absolute;
+  top: 640px;
+  left: 292px;
+  transform: translate(-50%, -50%);
+  background-color: #9ecacc;
+  color: #32343c;
+  padding: 10px 20px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.overlaytext3 {
+  position: absolute;
+  top: 640px;
+  left: 723px;
+  transform: translate(-50%, -50%);
+  background-color: #9ecacc;
+  color: #32343c;
+  padding: 10px 20px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.contactlinks {
+  display: block;
+}
+
+footer {
+  display: flex;
+  background-color: #32343c;
+  color: #9ecacc;
+  height: 50px;
+  font-size: 36px;
+  justify-content: center;
+  align-items: center;
+  /* position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0; */
+}

@@ -126,8 +126,7 @@ p {
 .work-item-minor {
   flex-grow: 2;
   flex-basis: 45%;
-  margin: 4px 4px 4px 4px;
-  margin: solid var(--secondary-color);
+  margin: 5px;
 }
 
 .work-item-minor img {

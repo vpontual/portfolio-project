@@ -1,18 +1,21 @@
+/* Global styles applied to all elements */
 * {
   /* border: 1px solid red; */
   /* margin: 3px; */
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-  --primary-color: #32343c;
-  --secondary-color: #9ecacc;
+  box-sizing: border-box; /* Ensures consistent box model calculations */
+  scroll-behavior: smooth; /* Enables smooth scrolling behavior */
+  --primary-color: #32343c; /* Defines primary color variable */
+  --secondary-color: #9ecacc; /* Defines secondary color variable */
 }
 
+/* Body styles */
 body {
   margin: 0;
   padding: 0;
   min-height: 100vh; /* Set minimum height for viewport */
 }
 
+/* Header styles */
 header {
   display: flex;
   justify-content: space-between;
@@ -78,7 +81,7 @@ li {
   width: 80px; /* Set the width of the overlay image */
   height: auto; /* Maintain image aspect ratio */
   border-radius: 50%; /* Make the overlay image circular */
-  border: 2px solid var(--secondary-color);
+  border: 2px solid var(--secondary-color); /* Uses secondary color variable */
 }
 
 /* Main Content Area */

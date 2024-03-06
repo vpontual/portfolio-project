@@ -7,67 +7,96 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/reset.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
   </head>
-
   <body>
     <header>
       <h1>VITOR PONTUAL</h1>
       <nav>
         <ul class="navigation">
-          <li><a href="#">About</a></li>
-          <li><a href="#">Work</a></li>
-          <li><a href="#">Contact Me</a></li>
-          <li><a href="#">Resume</a></li>
+          <li><a href="#aboutme">About</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
-    <div class="banner">
-      <img src="./images/wall.png" alt="Banner image of a brick wall" />
-    </div>
-
-    <div class="wrapper">
-      <nav class="sidenav">
-        <ul>
-          <li>About Me</li>
-          <li>Work</li>
-          <li>Contact Me</li>
-        </ul>
-      </nav>
-      <main class="container">
-        <section class="aboutcontent">
+    <main>
+      <figure class="banner">
+        <img
+          id="bricks"
+          src="./images/wall.png"
+          alt="Banner image of a brick wall"
+        />
+        <img
+          id="portrait"
+          src="./images/vp.jpeg"
+          alt="Personal portrait picture"
+        />
+      </figure>
+      <section id="aboutme">
+        <h2>About Me</h2>
+        <div class="aboutme_content">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
-            facilis quas maiores provident, tenetur quaerat ullam obcaecati
-            aliquam similique accusamus vero nam eius atque tempora culpa neque
-            ipsum aperiam aut?
+            I am an Economist turned Technical Product Manager. After spending
+            years managing the product by writing user journeys, defining new
+            features and ensuring product launches go smoothly, I started
+            exploring the technical side of creating products. First by diving
+            deep into self hosting services on a home server and now on to being
+            able to create and prototype ideas quickly after studying Full Stack
+            Development.
           </p>
-        </section>
-        <div class="card major">
-          <h2 class="overlaytext1">Study Guide</h2>
-          <img src="./images/notes.jpg" alt="stock photo about notetaking" < />
-          <a href="https://vpontual.github.io/prework-study-guide/"></a>
         </div>
-        <div class="card minor1">
-          <h2 class="overlaytext2">TrustdNEWS</h2>
-          <img src="./images/tn.png" alt="TrustdNews website logo" < />
-          <a href="https://www.trustdnews.com/"></a>
+      </section>
+      <section id="work">
+        <h2>Work</h2>
+        <div class="work-items">
+          <div class="work-item-minor work-item-major">
+            <h3 id="psg">Prework SG</h3>
+            <p id="psgp">Bootcamp Study Guide</p>
+            <a href="https://vpontual.github.io/prework-study-guide/"
+              ><img
+                id="mainimage"
+                src="./images/notes.jpg"
+                alt="stock photo about notetaking"
+            /></a>
+          </div>
+          <div class="work-item-minor">
+            <h3 id="tn">TrustdNEWS</h3>
+            <p id="tnp">User Driven RSS Reader</p>
+            <a href="https://www.trustdnews.com/"
+              ><img
+                id="subimage"
+                src="./images/tn.png"
+                alt="TrustdNews website logo"
+            /></a>
+          </div>
+          <div class="work-item-minor">
+            <h3 id="ps">Pontual Social</h3>
+            <p id="psp">Self Hosted Social Sites</p>
+            <a href="www.pontual.social"
+              ><img
+                id="subimage"
+                src="./images/ps.png"
+                alt="Pontual Social website logo"
+            /></a>
+          </div>
         </div>
-        <div class="card minor2">
-          <h2 class="overlaytext3">Pontual Social</h2>
-          <img src="./images/ps.png" alt="Pontual Social website logo" < />
-          <a href="www.pontual.social"></a>
+      </section>
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <div class="contactme">
+          <ul class="contactme_info">
+            <li class="email">
+              <a href="mailto:v.pontual@gmail.com"></a>Email
+            </li>
+            <li class="linkedin">
+              <a href="https://www.linkedin.com/in/vitorpontual"></a>LinkedIn
+            </li>
+            <li class="github">
+              <a href="https://github.com/vpontual"></a>Github
+            </li>
+          </ul>
         </div>
-      </main>
-      <nav>
-        <ul class="contactlinks">
-          <li><a href="mailto:v.pontual@gmail.com">Email</a></li>
-          <li>
-            <a href="https://www.linkedin.com/in/vitorpontual">LinkedIn</a>
-          </li>
-          <li><a href="https://github.com/vpontual">Github</a></li>
-        </ul>
-      </nav>
-    </div>
+      </section>
+    </main>
+    <footer>Copyright &copy 2024</footer>
   </body>
-
-  <footer>&copy 2024 Vitor Pontual</footer>
 </html>

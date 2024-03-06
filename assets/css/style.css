@@ -1,202 +1,255 @@
-/* Global styles */
 * {
+  /* border: 1px solid red; */
+  /* margin: 3px; */
   box-sizing: border-box;
+  scroll-behavior: smooth;
+  --primary-color: #32343c;
+  --secondary-color: #9ecacc;
 }
 
-/* Body */
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh; /* Set minimum height for viewport */
 }
 
-/* Header */
 header {
   display: flex;
   justify-content: space-between;
-  background-color: #32343c;
-  color: grey;
-  height: 50px;
-  font-size: 36px;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  height: 80px;
+  width: auto;
+  font-size: 15px;
   align-items: center;
 }
 
 header h1 {
-  background: #9ecacc;
-  color: #32343c;
-  width: 350px;
+  background: var(--secondary-color);
+  color: var(--primary-color);
+  width: 300px;
   text-align: end;
+  padding-right: 2px;
+  font-size: 36px;
 }
 
-/* Navigation */
+/* Top Navigation */
 .navigation {
   margin: 0; /* Removes default margin */
   padding: 0; /* Removes default padding */
-  display: flex; /* Displays list items horizontally */
+  display: flex;
   font-size: 18px;
 }
 
 .navigation li {
   margin-right: 20px; /* Adds space between list items */
-  border-bottom: #9ecacc;
+  border-bottom: var(--secondary-color);
 }
 
 .navigation li a {
   text-decoration: none;
-  color: #9ecacc;
+  color: var(--secondary-color);
 }
 
 li {
   list-style: none;
 }
 
-/* Banner */
+/* Banner Image placement*/
 .banner {
   width: 100%;
   height: 100px;
-  margin: 0 auto;
+  margin: 0px 0px 10px 0px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
 
 .banner img {
-  /* Optional: Adjust image display properties */
   width: 100%; /* Stretch image to fit the banner */
   height: 100px; /* Maintain image aspect ratio */
 }
 
-/* Layout */
-.wrapper {
+#portrait {
+  position: absolute; /* Position the overlay image on top */
+  top: 50%; /* Center the overlay image vertically */
+  left: 90%; /* Center the overlay image horizontally */
+  transform: translate(-50%, -50%); /* Center the overlay image precisely */
+  width: 80px; /* Set the width of the overlay image */
+  height: auto; /* Maintain image aspect ratio */
+  border-radius: 50%; /* Make the overlay image circular */
+  border: 2px solid var(--secondary-color);
+}
+
+/* Main Content Area */
+section {
   display: flex;
-  padding-bottom: 50px;
+  margin-bottom: 10px;
 }
 
-.sidenav {
-  width: 200px; /* Set width of the side nav */
-  padding: 10px; /* Optional: Add padding */
-  border-right: 1px solid #ddd; /* Optional: Add border */
-  text-align: end;
+section h2 {
+  min-width: 20%;
+  text-align: right;
+  padding-right: 2%;
+  border-right: 2px solid var(--primary-color);
+  margin-right: 2%;
 }
 
-.sidenav li {
-  padding: 5px 10px; /* Add padding to list items */
+h2 {
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+h3 {
+  font-size: 18px;
 }
 
-.container {
+p {
+  font-size: 16px;
+}
+
+.work {
   display: flex;
   flex-wrap: wrap;
-  /* width: 500px; Optional: Set container width */
-  width: 100%;
-  margin: 0 auto; /* Optional: Center the container horizontally */
-  border: 1px 0px 1px 20px solid #ddd; /* Optional: Add a border for visualization */
+  flex-direction: row;
 }
 
-/* Main content */
-.aboutcontent {
-  display: flex;
-  padding: 10px;
-  margin: 10px;
-  text-align: justify;
-}
-
-.main {
+.work-items {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
+  align-self: center;
+  width: 80%;
   position: relative;
 }
 
-.card {
-  display: flex;
-  padding: 0px;
-  border: 5px solid #9ecacc;
-  margin: 5px;
-  /* text-align: center; */
-  height: 200px;
-  align-items: flex-end;
+.work-item-minor {
+  flex-grow: 2;
+  flex-basis: 45%;
+  margin: 4px 4px 4px 4px;
+  margin: solid var(--secondary-color);
 }
 
-.major {
-  width: 94%;
-  justify-content: space-between;
-  margin-left: 5%;
-  margin-right: 5%;
-  display: flex;
-  /* flex-wrap: wrap; */
-  position: relative;
-}
-
-.major img {
+.work-item-minor img {
+  min-width: 200px;
   width: 100%;
-  height: 190px;
+  height: 250px;
+  object-fit: cover;
 }
 
-.minor1 {
-  width: 42%;
-  justify-content: space-between;
-  margin-left: 5%;
-  margin-top: 5%;
+.work-item-major {
+  flex: 0 0 100%;
+  padding: 4px;
 }
 
-.minor2 {
-  width: 42%;
-  justify-content: space-between;
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-top: 5%;
-}
-
-.minor1 img,
-.minor2 img {
-  width: 100%;
-  height: 190px;
-}
-
-.overlaytext1 {
+#psg {
   position: absolute;
-  top: 160px;
-  left: 75px;
-  transform: translate(-50%, -50%);
-  background-color: #9ecacc;
-  color: #32343c;
-  padding: 10px 20px;
-  font-size: 20px;
-  text-align: center;
+  top: 36%;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  padding: 2px;
+  width: 14%;
+  font-weight: bold;
 }
 
-.overlaytext2 {
+#psgp {
   position: absolute;
-  top: 640px;
-  left: 292px;
-  transform: translate(-50%, -50%);
-  background-color: #9ecacc;
-  color: #32343c;
-  padding: 10px 20px;
-  font-size: 20px;
-  text-align: center;
+  top: 40%;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  padding: 2px;
+  width: 14%;
 }
 
-.overlaytext3 {
+#tn {
   position: absolute;
-  top: 640px;
-  left: 723px;
-  transform: translate(-50%, -50%);
-  background-color: #9ecacc;
+  top: 88%;
+  background-color: var(--secondary-color);
+  color: var(--primary-color):
+  padding: 2px;
+  width: 16%;
+  font-weight: bold;
+}
+
+#tnp {
+  position: absolute;
+  top: 91%;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  padding: 2px;
+  width: 16%;
+}
+
+#ps {
+  position: absolute;
+  top: 88%;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  padding: 2px;
+  width: 16%;
+  font-weight: bold;
+}
+
+#psp {
+  position: absolute;
+  top: 92%;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  padding: 2px;
+  width: 16%;
+}
+
+/* Contact Me List */
+.contactme {
+  display: flex;
+}
+
+.contactme_info {
+  display: flex;
+  font-size: 24px;
+  align-items: center;
+}
+
+.contactme_info li {
+  margin-right: 100px; /* Adds space between list items */
+}
+
+.contactme_info li a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+li {
+  list-style: none;
+}
+
+.email {
+  margin-left: 150px;
+  text-decoration: none;
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
+}
+
+.linkedin {
+  text-decoration: none;
   color: #32343c;
-  padding: 10px 20px;
-  font-size: 20px;
-  text-align: center;
+  border-bottom: 2px solid var(--primary-color);
 }
 
-.contactlinks {
-  display: block;
+.github {
+  text-decoration: none;
+  color: #32343c;
+  border-bottom: 2px solid var(--primary-color);
 }
 
+/* Footer */
 footer {
   display: flex;
-  background-color: #32343c;
-  color: #9ecacc;
-  height: 50px;
-  font-size: 36px;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  height: 30px;
+  font-size: 18px;
   justify-content: center;
   align-items: center;
-  /* position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0; */
+ 
 }

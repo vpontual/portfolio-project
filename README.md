@@ -1,4 +1,4 @@
-## Advanced CSS: Portfolio Challenge
+## A Simple HTML and CSS Portfolio
 
 ## The Task
 

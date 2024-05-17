@@ -73,6 +73,18 @@ li {
   height: 100px; /* Maintain image aspect ratio */
 }
 
+/* Main Content Area */
+section {
+  display: flex;
+  margin-bottom: 100px; /* Increase the bottom margin for more spacing */
+  padding-bottom: 50px; /* Add some bottom padding as well */
+}
+
+/* Additional spacing for the last section */
+section:last-child {
+  margin-bottom: 200px; /* Increase the bottom margin for the last section */
+}
+
 #portrait {
   position: absolute; /* Position the overlay image on top */
   top: 50%; /* Center the overlay image vertically */
@@ -109,6 +121,12 @@ h3 {
 
 p {
   font-size: 16px;
+}
+
+/* Spacing before the "About Me" section */
+#aboutme {
+  margin-top: 30px; /* Add some top margin to create spacing */
+  padding-top: 10px; /* Add some top padding as well */
 }
 
 .work {
@@ -167,7 +185,7 @@ p {
   position: absolute;
   top: 88%;
   background-color: var(--secondary-color);
-  color: var(--primary-color):
+  color: var(--primary-color);
   padding: 2px;
   width: 16%;
   font-weight: bold;
@@ -253,5 +271,4 @@ footer {
   font-size: 18px;
   justify-content: center;
   align-items: center;
- 
 }

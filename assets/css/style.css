@@ -123,10 +123,26 @@ p {
   font-size: 16px;
 }
 
+section {
+  display: flex;
+  margin-bottom: 100px;
+  padding-bottom: 50px;
+}
+
+/* Additional spacing for the last section */
+section:last-child {
+  margin-bottom: 200px;
+}
+
 /* Spacing before the "About Me" section */
 #aboutme {
   margin-top: 30px; /* Add some top margin to create spacing */
-  padding-top: 10px; /* Add some top padding as well */
+  padding-top: 10px;
+  padding-right: 20px; /* Add some top padding as well */
+}
+
+#work {
+  padding-right: 20px;
 }
 
 .work {
